@@ -21,8 +21,7 @@ ChartJS.register(
   Legend
 );
 
-// Expense Tracker - React + Tailwind + Chart.js
-// Install: npm i react-chartjs-2 chart.js
+
 
 export default function App() {
   const [transactions, setTransactions] = useState(() => {
