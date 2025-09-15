@@ -1,0 +1,81 @@
+.favorites-page {
+  padding: 2rem;
+  color: #fff;
+  background: #141414;
+  min-height: 100vh;
+}
+
+.favorites-page h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.favorites-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.favorite-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #222;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.favorite-card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.favorite-link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.favorite-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.favorite-card img:hover {
+  transform: scale(1.05);
+}
+
+.favorite-card p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+/* 🗑️ Remove Button */
+.remove-btn {
+  margin-top: 6px;
+  background: #e50914;
+  border: none;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #b20710;
+  transform: scale(1.05);
+}

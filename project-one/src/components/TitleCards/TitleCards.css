@@ -1,0 +1,85 @@
+.title-cards {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.title-cards h2 {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-list {
+  display: flex;
+  gap: 14px;
+  overflow-x: scroll;
+  padding: 10px 0;
+}
+
+.card-list::-webkit-scrollbar {
+  display: none;
+}
+
+.card-list .card {
+  position: relative;
+  min-width: 240px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card-list .card:hover {
+  transform: scale(1.08);
+}
+
+.card-list img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Overlay for title text */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+/* ❤️ Heart Button */
+.heart-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.heart-btn:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.1);
+}
+
+.heart-btn.active {
+  color: #e50914; /* Netflix red */
+}
+
+.no-results {
+  color: #aaa;
+  font-size: 16px;
+  margin: 20px;
+}

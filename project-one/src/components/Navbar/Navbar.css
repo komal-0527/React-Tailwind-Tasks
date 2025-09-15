@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5%;
+  background: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Left */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar-left .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e50914;
+  text-decoration: none;
+}
+.navbar-left ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.navbar-left ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.95rem;
+}
+.navbar-left ul li a:hover {
+  color: #e50914;
+}
+
+/* Right */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #222;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 5px;
+  width: 180px;
+}
+.search-box button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Favorites */
+.fav-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.heart-icon {
+  font-size: 1.3rem;
+  color: #e50914;
+}
+.fav-link span {
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
